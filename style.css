@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(221, 100%, 96%);
+    min-height: 100vh;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+}
+
+.results, .summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.results {
+    padding: 35px 50px;
+    border-radius: 0 0 35px 35px;
+}
+
+.summary {
+    padding: 27.5px 29px;
+}
+
+.overall-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    gap: 5px;
+    background-image: linear-gradient(
+    325deg,
+    hsl(252deg 67% 55%) 0%,
+    hsl(251deg 67% 55%) 11%,
+    hsl(250deg 67% 53%) 22%,
+    hsl(250deg 68% 53%) 33%,
+    hsl(249deg 68% 51%) 44%,
+    hsl(248deg 68% 50%) 56%,
+    hsl(247deg 67% 49%) 67%,
+    hsl(246deg 68% 48%) 78%,
+    hsl(246deg 68% 47%) 89%,
+    hsl(245deg 68% 46%) 100%
+    );
+}
+
+.overall-score .numerator {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.overall-score .denominator {
+    font-size: 15px;
+    color: hsl(252, 91%, 87%);
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+.results {
+    background-image: linear-gradient(
+    180deg,
+    hsl(252deg 100% 67%) 0%,
+    hsl(251deg 98% 65%) 11%,
+    hsl(250deg 96% 64%) 22%,
+    hsl(248deg 94% 63%) 33%,
+    hsl(247deg 92% 61%) 44%,
+    hsl(246deg 89% 60%) 56%,
+    hsl(245deg 88% 58%) 67%,
+    hsl(243deg 85% 57%) 78%,
+    hsl(242deg 83% 55%) 89%,
+    hsl(241deg 81% 54%) 100%
+    );
+    color: white;
+    text-align: center;
+}
+
+.results h1 {
+    font-size: 18px;
+    color: hsl(252, 91%, 87%);
+    font-weight: 600;
+}
+
+.statement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.statement p {
+    color: hsl(252, 91%, 87%);
+}
+
+.summary h1 {
+    font-size: 19px;
+    font-weight: 600;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary > * {
+    width: 100%;
+}
+
+#reaction, #memory, #verbal, #visual, .score, .aspect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aspect {
+    gap: 10px;
+}
+
+#reaction, #memory, #verbal, #visual {
+    padding: 17.5px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.score {
+    gap: 5px;
+    color: hsl(222, 5%, 61%);
+    font-weight: 700;
+}
+
+.score .numerator {
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-aspects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+
+#continue {
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
